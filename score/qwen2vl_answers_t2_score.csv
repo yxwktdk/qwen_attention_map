@@ -1,0 +1,125 @@
+Metric,Category,Subcategory,Count,Strict Accuracy,Loose Accuracy
+unary,Points-unary,Existence,1,1.0,1.0
+unary,Points-unary,Quantity,2,0.0,0.0
+unary,Points-unary,Size Property,0,-,-
+unary,Line Segment-unary,Existence,0,-,-
+unary,Line Segment-unary,Quantity,1,1.0,1.0
+unary,Line Segment-unary,Size Property,4,0.5,0.5
+unary,Angle-unary,Existence,1,1.0,1.0
+unary,Angle-unary,Quantity,1,0.0,0.0
+unary,Angle-unary,Size Property,3,0.3333333333333333,0.3333333333333333
+unary,Triangle-unary,Existence,0,-,-
+unary,Triangle-unary,Quantity,0,-,-
+unary,Triangle-unary,Size Property,0,-,-
+unary,Circle-unary,Existence,0,-,-
+unary,Circle-unary,Quantity,0,-,-
+unary,Circle-unary,Size Property,0,-,-
+unary,Polygon-unary,Existence,0,-,-
+unary,Polygon-unary,Quantity,1,1.0,1.0
+unary,Polygon-unary,Size Property,0,-,-
+unary,Arc-unary,Existence,0,-,-
+unary,Arc-unary,Quantity,0,-,-
+unary,Arc-unary,Size Property,0,-,-
+unary,Sector-unary,Existence,0,-,-
+unary,Sector-unary,Quantity,0,-,-
+unary,Sector-unary,Size Property,0,-,-
+binary,Points,Points,0,-,-
+binary,Points,LineSegment,0,-,-
+binary,Points,Angle,0,-,-
+binary,Points,Triangle,0,-,-
+binary,Points,Circle,0,-,-
+binary,Points,Polygon,1,0.0,0.0
+binary,LineSegment,LineSegment,2,0.5,0.5
+binary,LineSegment,Angle,0,-,-
+binary,LineSegment,Triangle,0,-,-
+binary,LineSegment,Circle,0,-,-
+binary,LineSegment,Polygon,1,1.0,1.0
+binary,Angle,Angle,0,-,-
+binary,Angle,Triangle,0,-,-
+binary,Angle,Circle,0,-,-
+binary,Angle,Polygon,0,-,-
+binary,Triangle,Triangle,2,0.5,0.5
+binary,Triangle,Circle,0,-,-
+binary,Triangle,Polygon,0,-,-
+binary,Circle,Circle,0,-,-
+binary,Circle,Polygon,0,-,-
+binary,Polygon,Polygon,0,-,-
+answer_type,choose,-,9,0.5555555555555556,0.5555555555555556
+answer_type,free-form,-,11,0.45454545454545453,0.45454545454545453
+special_case,wrongprerequisite,-,0,-,-
+special_case,not given,-,2,0.0,0.0
+special_case,normal,-,18,0.5555555555555556,0.5555555555555556
+id,1,-,1,1.0,1.0
+id,2,-,2,0.0,0.0
+id,3,-,0,-,-
+id,4,-,0,-,-
+id,5,-,1,1.0,1.0
+id,6,-,4,0.5,0.5
+id,7,-,1,1.0,1.0
+id,8,-,1,0.0,0.0
+id,9,-,2,0.5,0.5
+id,10,-,1,0.0,0.0
+id,11,-,0,-,-
+id,12,-,0,-,-
+id,13,-,0,-,-
+id,14,-,0,-,-
+id,15,-,0,-,-
+id,16,-,0,-,-
+id,17,-,0,-,-
+id,18,-,0,-,-
+id,19,-,0,-,-
+id,20,-,0,-,-
+id,21,-,0,-,-
+id,22,-,0,-,-
+id,23,-,0,-,-
+id,24,-,0,-,-
+id,25,-,0,-,-
+id,26,-,0,-,-
+id,27,-,0,-,-
+id,28,-,0,-,-
+id,29,-,0,-,-
+id,30,-,0,-,-
+id,31,-,0,-,-
+id,32,-,0,-,-
+id,33,-,0,-,-
+id,34,-,0,-,-
+id,35,-,0,-,-
+id,36,-,0,-,-
+id,37,-,1,0.0,0.0
+id,38,-,2,0.5,0.5
+id,39,-,0,-,-
+id,40,-,0,-,-
+id,41,-,0,-,-
+id,42,-,0,-,-
+id,43,-,0,-,-
+id,44,-,0,-,-
+id,45,-,0,-,-
+id,46,-,0,-,-
+id,47,-,0,-,-
+id,48,-,1,1.0,1.0
+id,49,-,0,-,-
+id,50,-,0,-,-
+id,51,-,0,-,-
+id,52,-,0,-,-
+id,53,-,0,-,-
+id,54,-,0,-,-
+id,55,-,0,-,-
+id,56,-,0,-,-
+id,57,-,0,-,-
+id,58,-,0,-,-
+id,59,-,0,-,-
+id,60,-,0,-,-
+id,61,-,0,-,-
+id,62,-,0,-,-
+id,63,-,2,0.5,0.5
+id,64,-,0,-,-
+id,65,-,0,-,-
+id,66,-,0,-,-
+id,67,-,0,-,-
+id,68,-,0,-,-
+id,69,-,0,-,-
+id,70,-,1,1.0,1.0
+id,71,-,0,-,-
+id,72,-,0,-,-
+image,synthetic,-,20,0.5,0.5
+image,mathverse,-,0,-,-

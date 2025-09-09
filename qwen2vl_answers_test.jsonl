@@ -1,0 +1,1 @@
+{"question_id": 20, "prompt": "What is the length of the line segment AM? Answer the question with a float.", "predict": "26", "answer": "26.", "type": "free-form", "category": ["Line Segment-unary"], "subcategory": "Size Property", "ID": 6, "image_path": "autogeo/images/100.png"}

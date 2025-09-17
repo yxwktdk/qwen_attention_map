@@ -81,8 +81,8 @@ for line in tqdm(questions[19:20]):
         # top_k=5,        # 考虑前5个可能的token
         # top_p=0.75,      # 考虑累积概率达到95%的token
         # repetition_penalty=1.1  # 轻微抑制重复
-        output_attentions=True,
-        return_dict_in_generate=True,
+        # output_attentions=True,
+        # return_dict_in_generate=True,
     )
     generated_ids_trimmed = [
         out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)

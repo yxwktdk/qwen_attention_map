@@ -25,7 +25,7 @@ ans_file = open(answer_file, "w")
 
 questions = [json.loads(q) for q in open(os.path.expanduser(question_file), "r")]
 
-for line in tqdm(questions[18:19]):
+for line in tqdm(questions[2500:2504]):
     idx = line["pid"]
     image_file = os.path.join("/scratch/stu2/math_data", line["Image"])
     qs = line["Question"]
@@ -125,11 +125,11 @@ for line in tqdm(questions[18:19]):
     #     period_pos = len(generated_ids_trimmed[0])
     # attentions = attentions[:period_pos-1]# 截断到句号位置
 
-    attentions = attentions[0]
+    attentions = attentions[1]
     # 注意力：(output_len ,num_layers, batch_size, num_heads, seq_len, seq_len)
     # 保留最后一层，将所有注意力头平均
     attentions_tensor = torch.stack(attentions)
-    last_layer_attentions = attentions_tensor[-1, :, :, -1,image_start_pos+1:image_end_pos]
+    last_layer_attentions = attentions_tensor[-1, :, :, :,image_start_pos+1:image_end_pos]
     # squeeze 去掉批次维度
     last_layer_attentions = last_layer_attentions[0]
     # 在第一个维度去平均
@@ -165,7 +165,7 @@ for line in tqdm(questions[18:19]):
     plt.imshow(resized_attention, cmap='jet', alpha=0.5)  #
     plt.axis('off')
     # 保存注意力图
-    attention_map_file = f"./attention_maps/input_attention_map_{idx}.png"
+    attention_map_file = f"./attention_maps/output_attention_map_{idx}.png"
     os.makedirs(os.path.dirname(attention_map_file), exist_ok=True)
     plt.savefig(attention_map_file)
     plt.close()
